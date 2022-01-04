@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bdd9261-4a3e-41b1-90e4-83a3af9b24a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Console/Commands/MakeConsumer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Console/stubs/consumer.stub" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -116,7 +118,7 @@
       <workItem from="1623650545627" duration="2503000" />
       <workItem from="1623743317920" duration="1133000" />
       <workItem from="1641278657936" duration="4755000" />
-      <workItem from="1641285820631" duration="8776000" />
+      <workItem from="1641285820631" duration="9122000" />
     </task>
     <servers />
   </component>
