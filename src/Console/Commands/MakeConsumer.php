@@ -14,7 +14,7 @@ class MakeConsumer extends Command
      *
      * @var string
      */
-    protected $signature = 'make:consumer {name}';
+    protected $signature = 'make:consumer {name} {queue}';
 
     /**
      * The console command description.
@@ -82,7 +82,7 @@ class MakeConsumer extends Command
         return [
             'NAMESPACE' => 'App\\Consumers',
             'CLASS_NAME' => $this->getSingularClassName($this->argument('name')),
-            'QUEUE' => $this->argument('name'),
+            'QUEUE' => $this->argument('queue'),
         ];
     }
 
