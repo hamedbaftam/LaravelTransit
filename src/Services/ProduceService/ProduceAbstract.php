@@ -3,6 +3,7 @@
 namespace Jamshid\LaravelTransit\Services\ProduceService;
 
 use Illuminate\Support\Facades\Log;
+use Jamshid\LaravelTransit\Drivers\RabbitMq\Broker;
 
 class ProduceAbstract
 {
@@ -57,7 +58,7 @@ class ProduceAbstract
         return $this->routingKey;
     }
 
-    public function send($broker)
+    public function sendWithRabbitMq(Broker $broker)
     {
         return (new $broker)->producer($this->getMessage(), $this->getQueue(), $this->getExchange(), $this->getRoutingKey());
     }
