@@ -1,12 +1,12 @@
 {
-  "name": "jamshidtest3/larave-transit",
+  "name": "hamedbaftam/larave-transit",
   "description": "A simple hello world composer package",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "Ogbonna Vitalis",
-      "email": "agavitalisogbonna@gmail.com"
+      "name": "hamed baftam",
+      "email": "hamedbaftam@gmail.com"
     }
   ],
   "minimum-stability": "stable",
@@ -20,7 +20,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Jamshid\\LaravelTransit\\HamedServiceProvider"
+        "Jamshid\\LaravelTransit\\LaravelTransitServiceProvider"
       ]
     }
   }

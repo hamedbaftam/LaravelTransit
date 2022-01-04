@@ -4,7 +4,7 @@ namespace Jamshid\LaravelTransit;
 
 use Illuminate\Support\ServiceProvider;
 
-class HamedServiceProvider extends ServiceProvider
+class LaravelTransitServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
