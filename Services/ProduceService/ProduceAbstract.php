@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelTransit\Services\Produce;
+namespace LaravelTransit\Services\ProduceService;
 
 use Illuminate\Support\Facades\Log;
 
