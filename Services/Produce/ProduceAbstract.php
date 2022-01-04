@@ -2,6 +2,8 @@
 
 namespace LaravelTransit\Services\Produce;
 
+use Illuminate\Support\Facades\Log;
+
 class ProduceAbstract
 {
     protected $message;
@@ -17,7 +19,9 @@ class ProduceAbstract
 
     public function getMessage()
     {
+        Log::info(get_class($this));
         return $this->message;
+
     }
 
     public function setQueue($queue)
