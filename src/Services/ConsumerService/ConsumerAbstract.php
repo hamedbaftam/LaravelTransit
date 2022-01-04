@@ -6,11 +6,12 @@ use Jamshid\LaravelTransit\Drivers\RabbitMq\Broker;
 
 class ConsumerAbstract
 {
-    public function consume()
+    public function consume($queueName, callable $callback)
     {
         $broker = new Broker();
-        return $broker->consume('WithdrawProduce', function () {
-            info('areeee');
+
+        $broker->consume($queueName, function ($message) use ($callback) {
+            call_user_func($callback, $message->body);
         });
     }
 }
