@@ -43,7 +43,7 @@ class ProduceAbstract
 
     public function getExchange()
     {
-        return $this->exchange ?? $this->queue;
+        return $this->exchange ?? $this->getQueue();
     }
 
     public function setRoutingKey($routingKey)
