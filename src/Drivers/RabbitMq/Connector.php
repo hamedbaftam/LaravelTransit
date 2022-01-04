@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelTransit\Drivers\RabbitMq;
+namespace LarvelTransit\Drivers\RabbitMq;
 
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 

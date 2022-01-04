@@ -2,8 +2,8 @@
 
 namespace LaravelTransit;
 
-use LaravelTransit\Services\Produce\ProduceAbstract;
-use LaravelTransit\Services\Produce\ProducerInterface;
+use LarvelTransit\Services\Produce\ProduceAbstract;
+use LarvelTransit\Services\Produce\ProducerInterface;
 
 class WithdrawProduce extends ProduceAbstract implements ProducerInterface
 {
