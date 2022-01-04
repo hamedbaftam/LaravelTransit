@@ -1,0 +1,23 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Jamshid\LaravelTransit\Services\ConsumerService\ConsumerAbstract;
+
+class $CLASS_NAME$ extends ConsumerAbstract
+{
+    public $queueName = '$QUEUE$';
+
+    public function subscribe()
+    {
+        $this->consume($this->queueName, function ($data) {
+            $this->handle($data);
+        });
+    }
+
+
+    public function handle($data)
+    {
+        info($data);
+    }
+}
