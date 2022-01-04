@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3bdd9261-4a3e-41b1-90e4-83a3af9b24a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Drivers/RabbitMq/Broker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Drivers/RabbitMq/Connector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Produce/Produce.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/.scrutinizer.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/phpunit.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Builder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Basic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/EqualsTo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Factory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/GreaterOrEqualsTo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/LesserOrEqualsTo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Claim/Validatable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parsing/Decoder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Parsing/Encoder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signature.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/BaseSigner.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/MultibyteStringConverter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha256.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha384.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/Sha512.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Ecdsa/SignatureConverter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha256.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha384.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Hmac/Sha512.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Key.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Keychain.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/OpenSSL.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha256.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha384.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Signer/Rsa/Sha512.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/Token.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/src/ValidationData.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/EcdsaTokenTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/HmacTokenTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/Keys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/RFC6978VectorTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/RsaTokenTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/UnsignedTokenTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/private.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/private2.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public1.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public2.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/ecdsa/public3.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/encrypted-private.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/encrypted-public.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/private.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/functional/rsa/public.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/BuilderTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/BasicTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/EqualsToTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/FactoryTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/GreaterOrEqualsToTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Claim/LesserOrEqualsToTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/ParserTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Parsing/DecoderTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Parsing/EncoderTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/SignatureTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/BaseSignerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/MultibyteStringConverterTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha256Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha384Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Ecdsa/Sha512Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/EcdsaTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha256Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha384Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Hmac/Sha512Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/HmacTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/KeyTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/KeychainTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha256Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha384Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/Rsa/Sha512Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/Signer/RsaTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/TokenTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/lcobucci/jwt/test/unit/ValidationDataTest.php" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/macroable" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/collections" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1tvXTYDaQ6ttKoVUnaJ3qJ7e04G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bdd9261-4a3e-41b1-90e4-83a3af9b24a7" name="Default Changelist" comment="" />
+      <created>1623650544492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623650544492</updated>
+      <workItem from="1623650545627" duration="2503000" />
+      <workItem from="1623743317920" duration="1133000" />
+      <workItem from="1641278657936" duration="1255000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
