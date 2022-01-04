@@ -1,6 +1,7 @@
 <?php
 
 namespace Jamshid\LaravelTransit\Drivers\RabbitMq;
+
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 
 class Connector
