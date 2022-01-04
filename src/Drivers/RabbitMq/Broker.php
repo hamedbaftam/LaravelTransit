@@ -1,6 +1,6 @@
 <?php
 
-namespace LarvelTransit\Drivers\RabbitMq;
+namespace Jamshid\LaravelTransit\Drivers\RabbitMq;
 
 use PhpAmqpLib\Message\AMQPMessage;
 
