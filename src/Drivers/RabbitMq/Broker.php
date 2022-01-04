@@ -15,7 +15,7 @@ class Broker
         $channel = $connection->channel();
 
         $channel->exchange_declare($exchange, 'direct', false, true, false);
-        $channel->queue_declare($queue, false, false, false, false);
+        $channel->queue_declare($queue, false, true, false, false);
         $channel->queue_bind($queue, $exchange, $routingKey);
 
         $msg = new AMQPMessage($message);
