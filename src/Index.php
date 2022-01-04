@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelTransit;
+namespace Jamshid\LaravelTransit;
 
 class Index
 {
