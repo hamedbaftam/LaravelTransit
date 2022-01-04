@@ -58,8 +58,9 @@ class ProduceAbstract
         return $this->routingKey;
     }
 
-    public function sendWithRabbitMq(Broker $broker)
+    public function sendWithRabbitMq()
     {
-        return (new $broker)->producer($this->getMessage(), $this->getQueue(), $this->getExchange(), $this->getRoutingKey());
+        $broker = new Broker();
+        return $broker->producer($this->getMessage(), $this->getQueue(), $this->getExchange(), $this->getRoutingKey());
     }
 }
