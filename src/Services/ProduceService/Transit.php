@@ -2,10 +2,10 @@
 
 namespace Jamshid\LaravelTransit\Services\ProduceService;
 
-class Produce
+class Transit
 {
 
-    public function send($class)
+    public function init($class)
     {
         return (new $class);
     }

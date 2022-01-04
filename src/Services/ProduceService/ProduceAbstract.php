@@ -56,4 +56,9 @@ class ProduceAbstract
     {
         return $this->routingKey;
     }
+
+    public function send($broker)
+    {
+        return (new $broker)->producer($this->getMessage(), $this->getQueue(), $this->getExchange(), $this->getRoutingKey());
+    }
 }

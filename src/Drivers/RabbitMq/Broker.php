@@ -7,7 +7,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 class Broker
 {
 
-    public function produce($message, $queue = 'default', $exchange = '', $routingKey = '')
+    public function producer($message, $queue = 'default', $exchange = '', $routingKey = '')
     {
         $connection = (new Connector())->connect();
 
