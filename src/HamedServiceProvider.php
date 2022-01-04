@@ -27,7 +27,7 @@ class HamedServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/courier'),
-            __DIR__ . '/../config/courier.php' => config_path('courier.php'),
-        ]);
+            __DIR__ . '/../config/laravel-transit.php' => config_path('laravel-trnsit.php'),
+        ],'laravel-transit');
     }
 }
