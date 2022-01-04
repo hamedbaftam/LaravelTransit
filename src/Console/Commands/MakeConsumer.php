@@ -3,7 +3,8 @@
 namespace Jamshid\LaravelTransit\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Contracts\Filesystem\Filesystem;
+
+
 use Illuminate\Support\Pluralizer;
 
 
@@ -51,8 +52,8 @@ class MakeConsumer extends Command
 
         $contents = $this->getSourceFile();
 
-        if (!$this->files->exists($path)) {
-            $this->files->put($path, $contents);
+        if (!file_exists($path)) {
+            $this->put($path, $contents);
             $this->info("File : {$path} created");
         } else {
             $this->info("File : {$path} already exits");
@@ -145,10 +146,24 @@ class MakeConsumer extends Command
      */
     protected function makeDirectory($path)
     {
-        if (!$this->files->isDirectory($path)) {
-            $this->files->makeDirectory($path, 0777, true, true);
+        if (!is_dir($path)) {
+            $this->makeDir($path, 0777, true, true);
         }
 
         return $path;
+    }
+
+    public function makeDir($path, $mode = 0755, $recursive = false, $force = false)
+    {
+        if ($force) {
+            return @mkdir($path, $mode, $recursive);
+        }
+
+        return mkdir($path, $mode, $recursive);
+    }
+
+    public function put($path, $contents, $lock = false)
+    {
+        return file_put_contents($path, $contents, $lock ? LOCK_EX : 0);
     }
 }
