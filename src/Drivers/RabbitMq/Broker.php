@@ -21,8 +21,6 @@ class Broker
         $msg = new AMQPMessage($message);
         $channel->basic_publish($msg, $exchange, $routingKey);
 
-        echo " [x] Sent 'Hello World!' to test_exchange / test_queue.\n";
-
         $channel->close();
         $connection->close();
     }

@@ -23,10 +23,11 @@ class HamedServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'courier');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'courier');
 
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/courier'),
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/courier'),
+            __DIR__ . '/../config/courier.php' => config_path('courier.php'),
         ]);
     }
 }
