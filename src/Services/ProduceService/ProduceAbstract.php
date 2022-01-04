@@ -32,7 +32,7 @@ class ProduceAbstract
 
     public function getQueue()
     {
-        return $this->queue;
+        return $this->queue ?? (new \ReflectionClass($this))->getShortName();
     }
 
     public function setExchange($exchange)
