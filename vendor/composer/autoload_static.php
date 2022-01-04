@@ -39,9 +39,9 @@ class ComposerStaticInit1fdbb5184edac74ae6b472db647bc297
             'PhpAmqpLib\\' => 11,
             'ParagonIE\\ConstantTime\\' => 23,
         ),
-        'L' => 
+        'J' => 
         array (
-            'LaravelTransit\\' => 15,
+            'Jamshid\\LaravelTransit\\' => 23,
         ),
         'I' => 
         array (
@@ -99,7 +99,7 @@ class ComposerStaticInit1fdbb5184edac74ae6b472db647bc297
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
-        'LaravelTransit\\' => 
+        'Jamshid\\LaravelTransit\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

@@ -5,8 +5,8 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '5812ac77b5b3882c13da56b11e7b2efd9ad6f8ec',
-        'name' => 'jamshidtest3/hello-composere1',
+        'reference' => '7595d4ca8dcb8496b71ed4801b601c049fc6f1a6',
+        'name' => 'jamshidtest3/larave-transit',
         'dev' => true,
     ),
     'versions' => array(
@@ -55,13 +55,13 @@
             'reference' => '79e1ec26d58426e4f06e5b548712a8a6dc1ffdca',
             'dev_requirement' => false,
         ),
-        'jamshidtest3/hello-composere1' => array(
+        'jamshidtest3/larave-transit' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '5812ac77b5b3882c13da56b11e7b2efd9ad6f8ec',
+            'reference' => '7595d4ca8dcb8496b71ed4801b601c049fc6f1a6',
             'dev_requirement' => false,
         ),
         'nesbot/carbon' => array(
