@@ -4,7 +4,6 @@ namespace Jamshid\LaravelTransit\Console\Commands;
 
 use Illuminate\Console\Command;
 
-
 use Illuminate\Support\Pluralizer;
 
 
@@ -34,11 +33,11 @@ class MakeConsumer extends Command
      * Create a new command instance.
      * @param Filesystem $files
      */
-    public function __construct(Filesystem $files)
+    public function __construct()
     {
         parent::__construct();
 
-        $this->files = $files;
+//        $this->files = $files;
     }
 
     /**
