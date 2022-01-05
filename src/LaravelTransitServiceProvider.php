@@ -4,6 +4,7 @@ namespace Jamshid\LaravelTransit;
 
 use Illuminate\Support\ServiceProvider;
 use Jamshid\LaravelTransit\Console\Commands\MakeConsumer;
+use Jamshid\LaravelTransit\Console\Commands\MakeProducer;
 
 class LaravelTransitServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,7 @@ class LaravelTransitServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 MakeConsumer::class,
+                MakeProducer::class,
             ]);
         }
 
