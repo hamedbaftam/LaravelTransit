@@ -35,11 +35,7 @@ use Traversable;
  * @property-read HigherOrderCollectionProxy $some
  * @property-read HigherOrderCollectionProxy $sortBy
  * @property-read HigherOrderCollectionProxy $sortByDesc
- * @property-read HigherOrderCollectionProxy $skipUntil
- * @property-read HigherOrderCollectionProxy $skipWhile
  * @property-read HigherOrderCollectionProxy $sum
- * @property-read HigherOrderCollectionProxy $takeUntil
- * @property-read HigherOrderCollectionProxy $takeWhile
  * @property-read HigherOrderCollectionProxy $unique
  * @property-read HigherOrderCollectionProxy $until
  */
@@ -48,7 +44,7 @@ trait EnumeratesValues
     /**
      * The methods that can be proxied.
      *
-     * @var string[]
+     * @var array
      */
     protected static $proxies = [
         'average',
@@ -111,34 +107,6 @@ trait EnumeratesValues
     public static function unwrap($value)
     {
         return $value instanceof Enumerable ? $value->all() : $value;
-    }
-
-    /**
-     * Create a new instance with no items.
-     *
-     * @return static
-     */
-    public static function empty()
-    {
-        return new static([]);
-    }
-
-    /**
-     * Create a new collection by invoking the callback a given amount of times.
-     *
-     * @param  int  $number
-     * @param  callable|null  $callback
-     * @return static
-     */
-    public static function times($number, callable $callback = null)
-    {
-        if ($number < 1) {
-            return new static;
-        }
-
-        return static::range(1, $number)
-            ->when($callback)
-            ->map($callback);
     }
 
     /**
@@ -551,7 +519,7 @@ trait EnumeratesValues
     }
 
     /**
-     * Filter items where the value for the given key is null.
+     * Filter items where the given key is not null.
      *
      * @param  string|null  $key
      * @return static
@@ -562,7 +530,7 @@ trait EnumeratesValues
     }
 
     /**
-     * Filter items where the value for the given key is not null.
+     * Filter items where the given key is null.
      *
      * @param  string|null  $key
      * @return static
@@ -669,24 +637,14 @@ trait EnumeratesValues
     }
 
     /**
-     * Filter the items, removing any items that don't match the given type(s).
+     * Filter the items, removing any items that don't match the given type.
      *
-     * @param  string|string[]  $type
+     * @param  string  $type
      * @return static
      */
     public function whereInstanceOf($type)
     {
         return $this->filter(function ($value) use ($type) {
-            if (is_array($type)) {
-                foreach ($type as $classType) {
-                    if ($value instanceof $classType) {
-                        return true;
-                    }
-                }
-
-                return false;
-            }
-
             return $value instanceof $type;
         });
     }
@@ -703,17 +661,6 @@ trait EnumeratesValues
     }
 
     /**
-     * Pass the collection into a new class.
-     *
-     * @param  string  $class
-     * @return mixed
-     */
-    public function pipeInto($class)
-    {
-        return new $class($this);
-    }
-
-    /**
      * Pass the collection to the given callback and then return it.
      *
      * @param  callable  $callback
@@ -724,36 +671,6 @@ trait EnumeratesValues
         $callback(clone $this);
 
         return $this;
-    }
-
-    /**
-     * Reduce the collection to a single value.
-     *
-     * @param  callable  $callback
-     * @param  mixed  $initial
-     * @return mixed
-     */
-    public function reduce(callable $callback, $initial = null)
-    {
-        $result = $initial;
-
-        foreach ($this as $key => $value) {
-            $result = $callback($result, $value, $key);
-        }
-
-        return $result;
-    }
-
-    /**
-     * Reduce an associative collection to a single value.
-     *
-     * @param  callable  $callback
-     * @param  mixed  $initial
-     * @return mixed
-     */
-    public function reduceWithKeys(callable $callback, $initial = null)
-    {
-        return $this->reduce($callback, $initial);
     }
 
     /**
@@ -804,6 +721,21 @@ trait EnumeratesValues
     public function uniqueStrict($key = null)
     {
         return $this->unique($key, true);
+    }
+
+    /**
+     * Take items in the collection until the given condition is met.
+     *
+     * This is an alias to the "takeUntil" method.
+     *
+     * @param  mixed  $value
+     * @return static
+     *
+     * @deprecated Use the "takeUntil" method directly.
+     */
+    public function until($value)
+    {
+        return $this->takeUntil($value);
     }
 
     /**
