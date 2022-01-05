@@ -8,14 +8,14 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Pluralizer;
 
 
-class MakeConsumer extends Command
+class MakeProducer extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'make:consumer {name} {queue}';
+    protected $signature = 'make:producer {name} {queue}';
 
     /**
      * The console command description.
@@ -68,7 +68,7 @@ class MakeConsumer extends Command
      */
     public function getStubPath()
     {
-        return __DIR__ . '/../stubs/consumer.stub';
+        return __DIR__ . '/../stubs/producer.stub';
     }
 
     /**
@@ -81,9 +81,8 @@ class MakeConsumer extends Command
     public function getStubVariables()
     {
         return [
-            'NAMESPACE' => 'App\\LaravelTransit\\Consumers',
+            'NAMESPACE' => 'App\\LaravelTransit\\Producers',
             'CLASS_NAME' => $this->getSingularClassName($this->argument('name')),
-            'QUEUE' => $this->argument('queue'),
         ];
     }
 
@@ -125,7 +124,7 @@ class MakeConsumer extends Command
      */
     public function getSourceFilePath()
     {
-        return base_path('app/LaravelTransit/Consumers/') . '/' . $this->getSingularClassName($this->argument('name')) . '.php';
+        return base_path('app/LaravelTransit/Producers/') . '/' . $this->getSingularClassName($this->argument('name')) . '.php';
     }
 
     /**

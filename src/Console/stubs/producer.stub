@@ -2,22 +2,9 @@
 
 namespace $NAMESPACE$;
 
-use Jamshid\LaravelTransit\Services\ConsumerService\ConsumerAbstract;
+use Jamshid\LaravelTransit\Services\ProduceService\ProduceAbstract;
 
-class $CLASS_NAME$ extends ProducerAbstract
+class $CLASS_NAME$ extends ProduceAbstract
 {
-    public $queueName = '$QUEUE$';
 
-    public function subscribe()
-{
-    $this->consume($this->queueName, function ($data) {
-        $this->handle($data);
-    });
-}
-
-
-    public function handle($data)
-{
-    info($data);
-}
 }
